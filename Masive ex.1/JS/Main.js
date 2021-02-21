@@ -32,3 +32,8 @@
 // const array = [90, 15, 45, 20, 87];
 // const mapFunction = array.map(x => x + 0);
 // console.log(mapFunction);
+
+// F(gasit inca o metoda)
+
+// const array = [9, 10, 8, 5, 2];
+// console.log(array);
