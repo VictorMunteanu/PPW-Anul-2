@@ -14,28 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
  }); 
 });
 
-// EX.4(trebue de găsit setTimeout())
+// EX.4
 setTimeout(() => document.body.style.background = "WHITE", 5000);
 const listItems = document.getElementsByTagName("li"); 
 
-const listAdd = () => {
-for (let j = 1; j <= 20; j++) {
-    let node = document.createElement("LI");                        
-    let textnode = document.createTextNode(`Element ${j}`);         
-    node.appendChild(textnode);                                     
-    document.getElementById("listID").appendChild(node);            
-    
-}
-
-let i = 0; 
-for (const item of listItems) { 
- if(i % 2 === 0) { 
- item.style.backgroundColor = "green"; 
- } else {
-    item.style.backgroundColor = "violet"; 
- }
- i++; 
-}
-}
-
-listAdd();
+let i = 1;
+setInterval (() => {
+    if (i <= 20){
+        const node = document.createElement("LI");
+        const textNode = document.createTextNode(`Element ${i}`);
+        node.appendChild(textNode);
+        document.getElementById("listID").appendChild(node);
+        if (i % 2 === 0) {
+            node.style.backgroundColor = "LIME";
+        } else {
+            node.style.backgroundColor = "VIOLET";
+        }
+        i++;
+    }
+}, 2000);
