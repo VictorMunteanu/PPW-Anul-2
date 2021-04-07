@@ -1,0 +1,1 @@
+În slider imagini 1000*500
