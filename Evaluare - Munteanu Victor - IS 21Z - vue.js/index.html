@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MV</title>
+</head>
+<body>
+    EX.1
+    <div id="app1" style="border: 5px solid darkred">
+        {{ username }}
+    </div>
+    EX.2
+    <div id="app2" style="border: 5px solid darkblue">
+        <input type="date" v-model="year">
+        Age: {{ age }}
+    </div>
+    EX.3
+    <div id="app3" style="border: 5px solid darkgreen">
+        <h2>Limbajul de programare</h2>
+        <input type="radio" name="language" v-model="Javascript">
+        <label for="one">Javascript</label><br>
+        <input type="radio" name="language" v-model="Python" >
+        <label for="one">Python</label><br>
+        <input type="radio" name="language" v-model="Java">
+        <label for="one">Java</label><br>
+        <label>Experienta?</label>
+        <input type="text" v-model="Experience">
+        <label>(in ani)</label><br>
+        <label>Salariul dumneavoastra:</label>
+        {{ salary }}
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
